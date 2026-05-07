@@ -1,33 +1,16 @@
-console.log('name');
-let firstName = 'Olena';
-console.log(firstName);
-let birthDate = 1997;
-let favColor = 'red';
-console.log(firstName, favColor);
-
-let isAdult = true;
-let isWeekend = false;
+const userName = prompt('Введите имя');
+console.log(userName);
+alert('Привет, ' + userName);
 
 
-// undefined
-let age;
-console.log(age)
-//
+const birthDate = prompt('Введите дату рождения');
+console.log(birthDate);
 
-let pet = 'null';
+const currentYear = new Date().getFullYear();
+console.log(typeof currentYear, currentYear);
 
-const titleMovie = 'Ice Age';
-console.log(titleMovie);
+const userAge = currentYear - birthDate;
+alert('Вам ' + userAge + "лет");
 
-
-const clockTime = ('8:00');
-console.log(clockTime);
-const weekDaysCount = 7;
-console.log(weekDaysCount);
-
-const isEmployed = false;
-console.log(isEmployed);
-
-const isCar = false;
-console.log
-
+const afterTenYears = userAge + 10;
+alert('А через 10 лет вам будет' + afterTenYears + 'лет');
